@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PHOTO ENHANCEMENT</title>
+  <link rel="stylesheet" type="text/css" href="floats.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+
+<section>
+    
+  <!--NAV BAR-->
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">INVITATIONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PHOTO ENHANCEMENT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">DROPDOWN?</a> <!--MAYBE INSERT A DROPDOWM MENU HERE?-->
+        </li>
+      </ul>
+
+    <img src="photo.enhancement.jpg" alt= "photoEnhancement">
+
+    <br>
+
+    <!--form-->
+    <section id="text" >
+
+            <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Ace Eliz" value="Mark" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustomUsername">Instagram</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="@AceElizabethDesigns" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto my-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                        <label class="form-check-label" for="autoSizingCheck2">
+                        Remember me
+                        </label>
+                    </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom04">School</label>
+                        <input type="text" class="form-control" id="validationCustom04" placeholder="School" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid School.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          I agree that I will not submit any photo containing nudity. I give full consent for this photo to be edited.
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                          </div>
+                    <div class="submit button"></div>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                  </form>
+                  <script>
+
+//do i need to work on this js a little more so i can figure out what to do?
+                  // Example starter JavaScript for disabling form submissions if there are invalid fields
+                  (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                      var forms = document.getElementsByClassName('needs-validation');
+                      // Loop over them and prevent submission
+                      var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                          if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                          }
+                          form.classList.add('was-validated');
+                        }, false);
+                      });
+                    }, false);
+                  })();
+                  </script>
+
+        <br>
+        <li>Another note is that I need to make this into some sort of an app, to make this easier. I need to make sure this is easy to use for a web edition, because most of htis will be done thought cellular device.</li>
+        </ul>
+    </section>
+
+
+
+    <section id="image">
+         <h1>IMAGE BOX HERE: flexbox images</h1>
+
+
+         <div class="row"> 
+            <div class="column">
+              <img src="photos/ski.ace.jpg" style="width:100%">
+              <img src="photos/birdseyeplacesetting.ace.jpg" style="width:100%">
+              <img src="photos/bob.ace.jpg" style="width:100%">
+              <img src="photos/car.ace.jpg" style="width:100%">
+              <img src="photos/Decor.ace.jpg" style="width:100%">
+              <img src="photos/fire.ace.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="photos/fuck.ace.jpg" style="width:100%">
+              <img src="photos/YachtingChristmas.jpg" style="width:100%">
+              <img src="photos/IMG_0326 copy.jpg" style="width:100%">
+              <img src="photos/K8Miami2.ace.jpg" style="width:100%">
+              <img src="photos/french.ace.jpg" style="width:100%">
+              <img src="photos/k8miami4.ace.jpg" style="width:100%">
+            </div>  
+            <div class="column">
+              <img src="photos/yo.ace.jpg" style="width:100%">
+              <img src="photos/aye.ace.jpg" style="width:100%">
+              <img src="photos/sam.ace.jpg" style="width:100%">
+              <img src="photos/K8Miami1.ace.jpg" style="width:100%">
+              <img src="photos/PlaceSettingace.jpg" style="width:100%">
+              <img src="photos/beaupenn.ace.jpg" style="width:100%">
+              <img src="photos/edits.ace.jpg" style="width:100%">
+            </div>
+          </div>
+    </section>
+
+
+    <section id="footer">
+        <footer>
+            <br>
+                <a href="mailto:lexxiecole@gmail.com">
+                        <img src="http://icons.iconarchive.com/icons/custom-icon-design/mono-general-2/256/mail-icon.png" class= "mail">
+                </a>
+
+                <a href="https://www.github.com/Lexxiecole">
+                        <img src="data:image/png;base64,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" class= "Git">
+                </a>
+        </footer>
+    </section>
+
+</section>
+</body>
+
+
+<!-- why is it that when i try to link the css in a seperate file to my page, the css goes haywire?-->
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Fredericka+the+Great|Hanalei+Fill|Lobster+Two|Marcellus+SC|Markazi+Text|Old+Standard+TT|Scheherazade|Six+Caps');
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+        padding: 20px;
+        
+    }
+    #text {
+        background-color: #e4e4e4;
+        width: 40%;
+        Height: 500px;
+        float: left;
+        border-style: solid;
+        border-color: #003663;
+        border-width: 10px;
+        margin: 5px,5px,5px,5px;
+        padding: 20px;
+        font-family: 'Marcellus SC', serif;
+        font-size: 12px;
+    }
+    #image {
+        background-color:white;
+        height: 500px;
+        width: 60%;
+        float: left;
+        border-style: solid;
+        border-color: #003663;
+        border-width: 10px;
+        margin: 50px,50px,50px,50px;
+        padding:20px;
+        font-family: 'Marcellus SC', serif;
+        font-size: 15px;
+
+    }
+    #footer {
+        Background-color: none;
+        height:100px;
+        width: 100%;
+        float: center;
+        border-style: none;
+        margin: 5px;
+        padding: 0px;
+        text-align: center;
+        clear: both;
+        font-family: 'Times New Roman';
+        font-size: 12px;
+        
+    }
+
+    .mail {
+        height: 3%;
+        width: 3%;
+    }
+
+    .Git {
+        height: 3%;
+        width: 3%;
+    }
+
+/* begin flexbox styling*/
+
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+</style>
+
+</html>
