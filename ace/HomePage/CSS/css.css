@@ -1,4 +1,6 @@
 
+
+/*navbar*/
 #navbar {
     background-color: #cfc5bc;
 }
@@ -11,6 +13,8 @@
     color: black;
 }
 
+
+/*jumbotron*/
 #jumbotron {
     background-color: #cfc5bc;
 
@@ -33,12 +37,32 @@
 }
 
 
+/* cards */
+.card1 {
+    border-style: solid;
+    border-color: black;
+}
+
+#barbie {
+    height: 200px;
+    width: 200px;
+}
 
 
+.card2 {
+    border-style: solid;
+    border-color: black;
+}
 
+.card3 {
+    border-style: solid;
+    border-color: black;
+}
 
-
-
+.card4 {
+    border-style: solid;
+    border-color: black;
+}
 
 
 
