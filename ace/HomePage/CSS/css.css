@@ -1,6 +1,6 @@
 
 #navbar {
-
+    background-color: #cfc5bc;
 }
 
 #barnav {
@@ -12,7 +12,7 @@
 }
 
 #jumbotron {
-    background-color: 
+    background-color: #cfc5bc;
 
 }
 
@@ -42,22 +42,14 @@
 
 
 
-
 /*
 FONTS:
-
 font-family: 'Noto Serif JP', sans-serif;
 font-family: 'Lora', serif;
 font-family: 'Pacifico', cursive;
+ 
 
-*/
-
-
-
-/* 
-COLOR PALLET #3848
-
-
+COLOR PALLET #3848: 
 #000205
 #082d3a
 #267491
