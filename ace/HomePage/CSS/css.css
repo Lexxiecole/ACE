@@ -38,17 +38,21 @@
 
 
 /* cards */
+
+/* card 1*/
 .card1 {
     border-style: solid;
     border-color: black;
+    align-content: center;
 }
 
 #barbie {
     height: 200px;
     width: 200px;
+    align-content: center;
 }
 
-
+/* card 2*/
 .card2 {
     border-style: solid;
     border-color: black;
